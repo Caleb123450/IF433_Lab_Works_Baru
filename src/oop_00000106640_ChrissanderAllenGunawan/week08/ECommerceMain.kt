@@ -32,3 +32,5 @@ fun main() {
         println()
     }
 }
+
+//Test Full Pipeline berhasil
