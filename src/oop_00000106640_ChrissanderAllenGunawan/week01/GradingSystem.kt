@@ -10,7 +10,11 @@ fun main(args: Array<String>) {
         else -> "D"
     }
     val status = calculateStatus(score)
+    val comment: String? = null
+    val finalComment = comment ?: "Tidak ada komentar"
+
     println("Student: $studentName, Score: $score, Grade: $grade, Status: $status")
+    println("Comment: $finalComment")
 }
 
 fun calculateStatus(score: Int) = if (score >= 60) "Lulus" else "Tidak Lulus"
