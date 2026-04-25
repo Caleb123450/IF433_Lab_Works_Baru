@@ -28,4 +28,23 @@ fun main() {
 
     // Test tier
     println("Tier: ${sword.tier}") // Harusnya "Legendary"
+
+    println("\n=== TEST PLAYER ===")
+    val player = Player("ProGamer123")
+
+    // Coba akses player.xp (harus error - uncomment untuk test)
+    // println(player.xp) // Error: Cannot access 'xp': it is private
+
+    println("Level awal: ${player.level}") // Level 1
+
+    // Tambah 50 XP (masih level 1)
+    player.addXp(50)
+    println("Level setelah +50 XP: ${player.level}") // Masih Level 1
+
+    // Tambah 60 XP (total 110, harus Level Up ke 2)
+    player.addXp(60)
+    println("Level setelah +60 XP: ${player.level}") // Level 2
+
+    // Test XP negatif
+    player.addXp(-10) // Harus error
 }
