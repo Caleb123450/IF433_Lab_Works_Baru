@@ -41,4 +41,17 @@ fun main() {
     // Memanggil hitungLuas(jariJari: Double)
     val luasLingkaran = math.hitungLuas(7.0)
     println("Luas Lingkaran (r=7.0): $luasLingkaran")
+
+    println("\n=== SISTEM PEMBAYARAN ===")
+
+    val ewallet = EWallet(accountName = "John Doe", balance = 50000.0)
+    val creditCard = CreditCard(accountName = "Jane Smith", limit = 100000.0)
+
+    // Polymorphic Collection
+    val paymentMethods: List<PaymentMethod> = listOf(ewallet, creditCard)
+
+    println("--- Percobaan Pembayaran Rp 75.000 ---")
+    for (payment in paymentMethods) {
+        payment.processPayment(75000.0)
+    }
 }
