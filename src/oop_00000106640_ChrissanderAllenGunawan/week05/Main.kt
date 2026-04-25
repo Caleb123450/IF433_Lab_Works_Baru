@@ -27,4 +27,18 @@ fun main() {
         }
         println("-------------------------")
     }
+    println("\n=== TEST METHOD OVERLOADING ===")
+    val math = MathHelper()
+
+    // Memanggil hitungLuas(sisi: Int)
+    val luasPersegi = math.hitungLuas(5)
+    println("Luas Persegi (sisi 5): $luasPersegi")
+
+    // Memanggil hitungLuas(panjang: Int, lebar: Int)
+    val luasPersegiPanjang = math.hitungLuas(10, 4)
+    println("Luas Persegi Panjang (10 x 4): $luasPersegiPanjang")
+
+    // Memanggil hitungLuas(jariJari: Double)
+    val luasLingkaran = math.hitungLuas(7.0)
+    println("Luas Lingkaran (r=7.0): $luasLingkaran")
 }
