@@ -41,4 +41,10 @@ fun main() {
     println("\n=== GAME RPG SYSTEM ===")
     GameManager.startGame()
     GameManager.startGame()
+
+    println("\n=== RARITY & FACTORY ===")
+    println("Drop chance LEGENDARY: ${ItemRarity.LEGENDARY.dropChance}%")
+
+    val starterWeapon = Weapon.forgeStarterSword()
+    println("Senjata Awal: ${starterWeapon.item.name} - Damage: ${starterWeapon.item.damage} - Durability: ${starterWeapon.durability}")
 }
