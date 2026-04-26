@@ -43,4 +43,6 @@ fun main() {
 
     println("\n-- UNIQUE TRADING PAIRS --")
     println(uniquePairs)
+
+    //testing TradingDashboard berhasil
 }
