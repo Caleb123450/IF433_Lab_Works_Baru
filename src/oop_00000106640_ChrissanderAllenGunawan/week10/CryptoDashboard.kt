@@ -24,3 +24,5 @@ fun main() {
         }
     }
 }
+
+//berhasil run semua data koin dan transaksi tampil dengan benar tanpa error
